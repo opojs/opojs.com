@@ -1,0 +1,26 @@
+@import "variables";
+
+.header-navigation__list {
+    margin: 0;
+    list-style: none;
+}
+
+.header-navigation__list-item {
+    display: inline-block;
+}
+
+.header-navigation__list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.header-navigation__link {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.header-navigation__link:hover,
+.header-navigation__link--active {
+    color: var(--color-alabaster);
+    text-decoration: underline;
+}

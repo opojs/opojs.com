@@ -1,0 +1,20 @@
+@import "./shared/styles";
+
+/* ==========================================================================
+   Make the <main> content ocupy the remaining space between the header and footer
+   ========================================================================== */
+
+.app {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.app .header {
+    flex: 0 0 auto;
+}
+
+.app .footer {
+    flex: 0 0 auto;
+}

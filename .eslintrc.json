@@ -1,0 +1,15 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint-config-moxy/es8",
+        "eslint-config-moxy/addons/browser",
+        "eslint-config-moxy/addons/react"
+    ],
+    "globals": {
+        "process": false,
+        "__SERVER__": false,
+        "__CLIENT__": false,
+        "__DEV__": false
+    }
+}

@@ -1,0 +1,17 @@
+@import "variables";
+
+.svg {
+    fill: var(--color-violet);
+    width: 24px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    user-select: none;
+    transition: fill 0.2s, fill-opacity 0.2s;
+}
+
+.svg svg {
+    width: inherit;
+    height: inherit;
+    display: block;  /* Remove little margin between the svg and its parent */
+}
