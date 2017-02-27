@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "opojs.com",
   "version": "0.1.0",
-  "description": "The https://project-domain.com web app",
+  "description": "https://opojs.com",
   "scripts": {
     "lint": "./bin/lint",
     "build": "./bin/build",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:org/project-name"
+    "url": "git@github.com:opojs/opojs.com"
   },
   "keywords": [
     "react",
@@ -24,8 +24,8 @@
   ],
   "author": "André Cruz <andre@moxy.studio>",
   "license": "MIT",
-  "bugs": "https://github.com/org/project-name/issues",
-  "homepage": "https://github.com/org/project-name",
+  "bugs": "https://github.com/opojs/opojs.com/issues",
+  "homepage": "https://github.com/opojs/opojs.com",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "classnames": "^2.2.5",
