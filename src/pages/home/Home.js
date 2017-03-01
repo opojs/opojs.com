@@ -21,7 +21,11 @@ class Home extends PureComponent {
                         <div className="twitter-cta">
                             <Svg className="twitter-icon" svg={ twitterSvg } />
                             <p>Stay in the loop!</p>
-                            <a href="https://twitter.com/opojs">Follow us on Twitter</a>
+                            <a
+                                href="https://twitter.com/opojs"
+                                target="_blank">
+                                Follow us on Twitter
+                            </a>
                         </div>
                     </div>
                 </div>
