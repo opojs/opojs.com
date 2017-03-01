@@ -17,7 +17,7 @@
 }
 
 .block {
-    padding: 138px 0 53px 19.5%;
+    padding: 138px 20px 53px 19.5%;
 }
 
 .inner {
@@ -25,18 +25,18 @@
 }
 
 .logo {
-    width: 224px;
+    width: 230px;
     margin-bottom: 125px;
 }
 
 .inner h1 {
-    max-width: 759px;
+    max-width: 730px;
     margin-bottom: 16px;
     text-transform: initial;
 }
 
 .inner > p {
-    margin-bottom: 73px;
+    margin-bottom: 83px;
     font-size: 22px;
 }
 
@@ -45,6 +45,11 @@
 
     display: flex;
     align-items: center;
+}
+
+.twitter-cta p,
+.twitter-cta p + a {
+    font-size: 18px;
 }
 
 .twitter-icon {
@@ -69,7 +74,7 @@
 
 @media (--layout-lte-small) {
     .block {
-        padding: 45px 0 138px 51px;
+        padding: 45px 51px 138px;
     }
 
     .logo {
@@ -84,7 +89,7 @@
     }
 
     .inner > p {
-        margin-bottom: 118px;
+        margin-bottom: 123px;
     }
 
     .inner > p,
@@ -111,7 +116,7 @@
 
 @media(--layout-lte-xsmall) {
     .block {
-        padding: 39px 0 120px 28px;
+        padding: 39px 22px 120px;
     }
 
     .logo {
@@ -139,5 +144,15 @@
 
     .twitter-cta p {
         margin-top: 15px;
+    }
+}
+
+/* ==========================================================================
+  Iphone6
+  ========================================================================== */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    .home-page {
+        height: calc(100vh + 39px);
     }
 }
