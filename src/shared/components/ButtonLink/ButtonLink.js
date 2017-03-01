@@ -17,7 +17,7 @@ class ButtonLink extends PureComponent {
 }
 
 ButtonLink.propTypes = {
-    link: PropTypes.object.isRequired,
+    link: PropTypes.string.isRequired,
     title: PropTypes.string,
     target: PropTypes.string,
     className: PropTypes.string,
