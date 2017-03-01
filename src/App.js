@@ -1,7 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import Header from './header/Header';
-import Footer from './footer/Footer';
 import './App.css';
 import { default as buildPageRoutes } from './pages/buildRoutes';
 
@@ -19,9 +17,7 @@ class App extends PureComponent {
                         { name: 'description', content: 'MOXY\'s awesome react-with-moxy boilerplate' },
                     ] } />
 
-                <Header />
                 { children }
-                <Footer />
             </div>
         );
     }

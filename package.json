@@ -80,7 +80,7 @@
     "skip-loader": "^1.0.0",
     "style-loader": "git://github.com/bendytree/style-loader.git#4f9f4494184f3b8a427a381249eb0e09f3787768",
     "stylelint": "^7.8.0",
-    "stylelint-config-moxy": "^1.0.0",
+    "stylelint-config-moxy": "^2.0.0",
     "svg-css-modules-loader": "^1.3.0",
     "svgo-loader": "^1.1.2",
     "webpack": "^2.2.1",

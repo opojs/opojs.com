@@ -26,8 +26,8 @@ export default function index({ head, rootHtml, config, buildManifest }) {
                 ${head.meta.toString()}
                 ${head.link.toString()}
 
-                <!-- Roboto from Google-->
-                <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+                <!-- Rubik from Google-->
+                <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
 
                 <!-- App stylesheet -->
                 <link id="app-css" rel="stylesheet" href="${assets['app.css']}">

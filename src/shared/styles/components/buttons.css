@@ -1,0 +1,24 @@
+button,
+.button {
+    padding: 17px 24px;
+    border: 2px solid var(--color-white);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-decoration: initial;
+}
+
+@media (--layout-lte-small) {
+    .button {
+        padding: 14px 28px;
+    }
+}
+
+@media(--layout-lte-xsmall) {
+    .button {
+        padding: 14px 27px;
+        font-size: 14px;
+    }
+}

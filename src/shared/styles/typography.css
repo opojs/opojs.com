@@ -8,18 +8,18 @@
 html,
 body {
     /* Put background color also in html because of macOS/iOS elastic scroll */
-    background-color: var(--color-alabaster);
+    background-color: var(--color-white);
 }
 
 body {
-    color: var(--color-violet);
     font-family: var(--typography-text-font);
     font-size: 16px;
+    color: var(--color-white);
     overflow-wrap: break-word;  /* Break long words by default */
 }
 
 ::selection {
-    background: color(var(--color-violet) lightness(25%));
+    background: color(var(--color-white) lightness(25%));
     color: var(--color-white);
 }
 
@@ -32,12 +32,12 @@ strong {
   ========================================================================== */
 
 a {
-    color: var(--color-amaranth);
+    color: var(--color-white);
     transition: color 0.2s;
 }
 
 a:hover {
-    color: var(--color-amaranth);
+    color: var(--color-white);
     text-decoration: underline;
 }
 
@@ -58,7 +58,9 @@ h6 {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 90px;
 }
 
 h2 {

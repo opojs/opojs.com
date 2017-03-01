@@ -1,0 +1,12 @@
+@define-mixin size $width, $height {
+    width: $width;
+    height: $height;
+}
+
+@define-mixin position $position, $top, $right, $bottom, $left {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

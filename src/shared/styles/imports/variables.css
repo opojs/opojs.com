@@ -11,10 +11,6 @@
 
 :root {
     --color-white: #fff;
-    --color-alabaster: #f7f7f7;
-    --color-amaranth: #ed3251;
-    --color-violet: #280d45;
-    --color-gallery: #ececec;
 }
 
 /* ==========================================================================
@@ -22,8 +18,8 @@
    ========================================================================== */
 
 :root {
-    --typography-display-font: "Roboto", sans-serif;
-    --typography-text-font: "Roboto", sans-serif;
+    --typography-display-font: "Rubik", sans-serif;
+    --typography-text-font: "Rubik", sans-serif;
 }
 
 /* ==========================================================================

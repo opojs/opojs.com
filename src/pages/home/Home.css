@@ -1,29 +1,143 @@
-@import "mixins/layout";
+@import "mixins/misc";
+@import "custom-medias";
+@import "variables";
 
-/* ==========================================================================
-   Layout
-   ========================================================================== */
+.home-page {
+    @mixin size 100%, 100vh;
 
-@mixin layout-main .home-page, .home-page__container;
-
-/* ==========================================================================
-   Hero
-   ========================================================================== */
-
-.home-page__hero {
-    position: relative;
-    height: 500px;
-    min-height: 200px;
-    max-height: 50vh;
-    overflow: hidden;
+    background-image: url("~shared/media/images/backgrounds/full-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.home-page__hero::before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 300px);
+.block,
+.inner {
     height: 100%;
-    display: block;
-    background: url("~shared/media/images/backgrounds/moxy-crowd.jpg") -300px center no-repeat;
-    background-size: cover;
+}
+
+.block {
+    padding: 138px 0 53px 19.5%;
+}
+
+.inner {
+    position: relative;
+}
+
+.logo {
+    width: 224px;
+    margin-bottom: 125px;
+}
+
+.inner h1 {
+    max-width: 759px;
+    margin-bottom: 16px;
+    text-transform: initial;
+}
+
+.inner > p {
+    margin-bottom: 73px;
+    font-size: 22px;
+}
+
+.twitter-cta {
+    @mixin position absolute, auto, auto, 0, 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.twitter-icon {
+    @mixin size 25px, 21px;
+
+    fill: var(--color-white);
+}
+
+.twitter-cta p,
+.twitter-cta a, {
+    font-size: 18px;
+}
+
+.twitter-cta p {
+    margin: 0 5px 0 17px;
+    font-weight: 300;
+}
+
+.twitter-cta a {
+    font-weight: 500;
+}
+
+@media (--layout-lte-small) {
+    .block {
+        padding: 45px 0 138px 51px;
+    }
+
+    .logo {
+        width: 194px;
+        margin-bottom: 100px;
+    }
+
+    .inner h1 {
+        max-width: 650px;
+        margin-bottom: 16px;
+        font-size: 80px;
+    }
+
+    .inner > p {
+        margin-bottom: 118px;
+    }
+
+    .inner > p,
+    .twitter-cta p,
+    .twitter-cta p + a {
+        font-size: 19px;
+    }
+
+    .twitter-cta {
+        bottom: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .twitter-icon {
+        @mixin size 19px, 16px;
+    }
+
+    .twitter-cta p {
+        margin: 23px 0 0;
+        font-weight: 300;
+    }
+}
+
+@media(--layout-lte-xsmall) {
+    .block {
+        padding: 39px 0 120px 28px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-bottom: 62px;
+    }
+
+    .inner h1 {
+        max-width: 340px;
+        margin-bottom: 13px;
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .inner > p,
+    .twitter-cta p,
+    .twitter-cta p + a {
+        font-size: 14px;
+    }
+
+    .inner > p {
+        margin-bottom: 76px;
+        font-size: 12px;
+    }
+
+    .twitter-cta p {
+        margin-top: 15px;
+    }
 }
