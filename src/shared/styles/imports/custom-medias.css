@@ -27,6 +27,3 @@
 @custom-media --layout-large (width > 1024px) AND (width <= 1440px);
 @custom-media --layout-xlarge (width > 1440px) AND (width <= 1920px);
 @custom-media --layout-xxlarge (width > 1920px);
-
-/* Use these to target specific devices */
-@custom-media --layout-iphone6 only screen and (min-device-width: 375px) and (max-device-width: 667px);
