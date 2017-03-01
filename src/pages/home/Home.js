@@ -15,9 +15,9 @@ class Home extends PureComponent {
                         <h1>Come and get to know us !</h1>
                         <p>We are having our fourth meetup on March 29.</p>
                         <ButtonLink
-                            link="https://www.meetup.com/opo-js/"
+                            link="https://www.youtube.com/user/opojs"
                             target="_blank"
-                            title="Know more about the meetup" />
+                            title="Check out our latest talks" />
                         <div className="twitter-cta">
                             <Svg className="twitter-icon" svg={ twitterSvg } />
                             <p>Stay in the loop!</p>
