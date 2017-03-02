@@ -5,7 +5,7 @@
 .home-page {
     @mixin size 100%, 100vh;
 
-    background-image: url("~shared/media/images/backgrounds/full-background.jpg");
+    background-image: url("~shared/media/images/backgrounds/desktop-background.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -73,6 +73,10 @@
 }
 
 @media (--layout-lte-small) {
+    .home-page {
+        background-image: url("~shared/media/images/backgrounds/tablet-background.jpg");
+    }
+
     .block {
         padding: 45px 51px 138px;
     }
@@ -115,6 +119,10 @@
 }
 
 @media(--layout-lte-xsmall) {
+    .home-page {
+        background-image: url("~shared/media/images/backgrounds/mobile-background.jpg");
+    }
+
     .block {
         padding: 39px 22px 120px;
     }

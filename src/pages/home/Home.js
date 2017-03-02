@@ -17,7 +17,8 @@ class Home extends PureComponent {
                         <ButtonLink
                             link="https://www.youtube.com/user/opojs"
                             target="_blank"
-                            title="Check out our latest talks" />
+                            title="Check out our latest talks"
+                            animation="skew" />
                         <div className="twitter-cta">
                             <Svg className="twitter-icon" svg={ twitterSvg } />
                             <p>Stay in the loop!</p>

@@ -3,11 +3,17 @@ import classnames from 'classnames';
 
 class ButtonLink extends PureComponent {
     render() {
-        const { link, title, target, className } = this.props;
+        const { link, title, target, className, animation } = this.props;
+
+        const buttonClass = classnames({
+            button: true,
+            [`${className}`]: className,
+            [`animation-${animation}`]: animation,
+        });
 
         return (
             <a
-                className={ classnames('button', className) }
+                className={ buttonClass }
                 href={ link }
                 target={ target || '_self' }>
                 { title }
@@ -21,6 +27,7 @@ ButtonLink.propTypes = {
     title: PropTypes.string,
     target: PropTypes.string,
     className: PropTypes.string,
+    animation: PropTypes.string,
 };
 
 module.exports = ButtonLink;

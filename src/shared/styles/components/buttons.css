@@ -1,6 +1,10 @@
+@import "mixins/misc";
+
 button,
 .button {
+    z-index: 1;
     padding: 17px 24px;
+    display: inline-block;
     border: 2px solid var(--color-white);
     font-size: 18px;
     cursor: pointer;
@@ -8,6 +12,32 @@ button,
 
 .button:hover {
     text-decoration: initial;
+}
+
+.button.animation-skew {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.button.animation-skew::after {
+    @mixin position absolute, auto, auto, 0, -10%;
+    @mixin size 0, 120%;
+
+    content: "";
+    z-index: -1;
+    transform: skewX(15deg);
+    background: var(--color-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover.animation-skew {
+    color: var(--color-dark-blue);
+}
+
+.button:hover.animation-skew::after {
+    left: -10%;
+    width: 120%;
 }
 
 @media (--layout-lte-small) {
