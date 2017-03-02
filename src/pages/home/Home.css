@@ -47,8 +47,20 @@
     align-items: center;
 }
 
+.twitter-cta:hover {
+    text-decoration: none;
+}
+
+.twitter-cta:hover .twitter-icon {
+    fill: var(--color-twitter);
+}
+
+.twitter-cta:hover strong {
+    color: var(--color-twitter);
+}
+
 .twitter-cta p,
-.twitter-cta p + a {
+.twitter-cta p + strong {
     font-size: 18px;
 }
 
@@ -59,17 +71,13 @@
 }
 
 .twitter-cta p,
-.twitter-cta a, {
+.twitter-cta strong, {
     font-size: 18px;
 }
 
 .twitter-cta p {
     margin: 0 5px 0 17px;
     font-weight: 300;
-}
-
-.twitter-cta a {
-    font-weight: 500;
 }
 
 @media (--layout-lte-small) {
@@ -98,7 +106,7 @@
 
     .inner > p,
     .twitter-cta p,
-    .twitter-cta p + a {
+    .twitter-cta p + strong {
         font-size: 19px;
     }
 
@@ -141,7 +149,7 @@
 
     .inner > p,
     .twitter-cta p,
-    .twitter-cta p + a {
+    .twitter-cta p + strong {
         font-size: 14px;
     }
 

@@ -19,15 +19,11 @@ class Home extends PureComponent {
                             target="_blank"
                             title="Check out our latest talks"
                             animation="skew" />
-                        <div className="twitter-cta">
+                        <a className="twitter-cta" href="https://twitter.com/opojs" target="_blank">
                             <Svg className="twitter-icon" svg={ twitterSvg } />
                             <p>Stay in the loop!</p>
-                            <a
-                                href="https://twitter.com/opojs"
-                                target="_blank">
-                                Follow us on Twitter
-                            </a>
-                        </div>
+                            <strong>Follow us on Twitter</strong>
+                        </a>
                     </div>
                 </div>
             </main>

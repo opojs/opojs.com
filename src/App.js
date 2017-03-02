@@ -11,10 +11,10 @@ class App extends PureComponent {
             <div className="app">
                 <Helmet
                     htmlAttributes={ { lang: 'en' } }
-                    defaultTitle="MOXY"
-                    titleTemplate="MOXY - %s"
+                    defaultTitle="opoJS"
+                    titleTemplate="opoJS"
                     meta={ [
-                        { name: 'description', content: 'MOXY\'s awesome react-with-moxy boilerplate' },
+                        { name: 'description', content: 'Meetup dedicated to all JavaScript aficionados in Porto (OPO) area.' },
                     ] } />
 
                 { children }

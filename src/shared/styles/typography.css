@@ -19,7 +19,7 @@ body {
 }
 
 ::selection {
-    background: color(var(--color-white) lightness(25%));
+    background: var(--color-yellow);
     color: var(--color-white);
 }
 
