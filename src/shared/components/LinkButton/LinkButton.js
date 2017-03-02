@@ -1,5 +1,6 @@
 import React, { PureComponent, PropTypes } from 'react';
 import classnames from 'classnames';
+import '../Button/Button.css';
 
 class ButtonLink extends PureComponent {
     render() {

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import ButtonLink from '../../shared/components/ButtonLink/ButtonLink.js';
+import LinkButton from '../../shared/components/LinkButton/LinkButton.js';
 import Svg from 'shared/components/svg/Svg';
 import logoSvg from 'shared/media/images/logos/logo.svg';
 import twitterSvg from 'shared/media/images/icons/twitter.svg';
@@ -14,7 +14,7 @@ class Home extends PureComponent {
                         <Svg className="logo" svg={ logoSvg } />
                         <h1>Come and get to know us !</h1>
                         <p>We are having our fourth meetup on March 29.</p>
-                        <ButtonLink
+                        <LinkButton
                             link="https://www.youtube.com/user/opojs"
                             target="_blank"
                             title="Check out our latest talks"
