@@ -76,6 +76,8 @@
 }
 
 .twitter-cta p {
+    @mixin typography-smooth;
+
     margin: 0 5px 0 17px;
     font-weight: 300;
 }
