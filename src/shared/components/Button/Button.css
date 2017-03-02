@@ -5,7 +5,7 @@
 button,
 .button {
     z-index: 1;
-    padding: 17px 24px;
+    padding: 14px 22px 15px;
     display: inline-block;
     border: 2px solid var(--color-white);
     font-size: 18px;
@@ -44,13 +44,13 @@ button,
 
 @media (--layout-lte-small) {
     .button {
-        padding: 14px 28px;
+        padding: 11px 11px 12px 12px;
     }
 }
 
 @media(--layout-lte-xsmall) {
     .button {
-        padding: 14px 27px;
+        padding: 12px 18.5px 13px 18px;
         font-size: 14px;
     }
 }
