@@ -12,17 +12,19 @@ class Home extends PureComponent {
                 <div className="block">
                     <div className="inner">
                         <Svg className="logo" svg={ logoSvg } />
-                        <h1>Come and get to know us !</h1>
-                        <p>We are having our fourth meetup on March 29.</p>
+                        <h1>Bringing the Oporto area JavaScript Community together.</h1>
+                        <p className="description">
+                            We're always organising events for the community
+                            to share, discuss & push their JavaScript skills forward.</p>
                         <LinkButton
                             link="https://www.youtube.com/user/opojs"
                             target="_blank"
-                            title="Check out our latest talks"
+                            title="Check our latest talks"
                             animation="skew" />
                         <a className="twitter-cta" href="https://twitter.com/opojs" target="_blank">
                             <Svg className="twitter-icon" svg={ twitterSvg } />
-                            <p>Stay in the loop!</p>
-                            <strong>Follow us on Twitter</strong>
+                            <p>Stay in the loop,</p>
+                            <strong>follow us on Twitter</strong>
                         </a>
                     </div>
                 </div>
@@ -30,6 +32,5 @@ class Home extends PureComponent {
         );
     }
 }
-
 
 export default Home;

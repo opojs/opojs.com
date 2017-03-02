@@ -17,7 +17,7 @@
 }
 
 .block {
-    padding: 138px 20px 53px 375px;
+    padding: 138px 20px 53px 280px;
 }
 
 .inner {
@@ -27,6 +27,10 @@
 .logo {
     width: 230px;
     margin-bottom: 125px;
+}
+
+.description {
+    width: 540px;
 }
 
 .inner h1 {
@@ -111,7 +115,8 @@
     .inner h1 {
         max-width: 650px;
         margin-bottom: 16px;
-        font-size: 80px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .inner > p {
