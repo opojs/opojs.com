@@ -197,11 +197,29 @@
 }
 
 /* ==========================================================================
-  Iphone6
+  Specific Device Media Queries
   ========================================================================== */
 
+/* Iphone 6 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
     .home-page {
         height: calc(100vh + 39px);
     }
 }
+
+/* Ipad Landscape */
+/* stylelint-disable */
+@media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .block {
+        padding: 45px 45px 95px;
+    }
+
+    .logo {
+        margin-bottom: 85px;
+    }
+}
+/* stylelint-enable */
