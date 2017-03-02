@@ -5,6 +5,7 @@
 
 /* Use these if you developing desktop first and want to target lower resolutions */
 
+@custom-media --layout-lte-xxsmall (width <= 360px);
 @custom-media --layout-lte-xsmall (width <= 480px);
 @custom-media --layout-lte-small (width <= 768px);
 @custom-media --layout-lte-medium (width <= 1024px);

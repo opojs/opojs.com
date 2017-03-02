@@ -163,6 +163,25 @@
     }
 }
 
+@media(--layout-lte-xxsmall) {
+    .home-page {
+        background-image: url("~shared/media/images/backgrounds/mobile-2-background.jpg");
+    }
+
+    .block {
+        padding: 39px 22px 50px;
+    }
+
+    .inner h1 {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .inner > p {
+        margin-bottom: 30px;
+    }
+}
+
 /* ==========================================================================
   Iphone6
   ========================================================================== */
