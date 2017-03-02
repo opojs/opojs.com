@@ -11,10 +11,10 @@ class App extends PureComponent {
             <div className="app">
                 <Helmet
                     htmlAttributes={ { lang: 'en' } }
-                    defaultTitle="opoJS"
-                    titleTemplate="opoJS"
+                    defaultTitle="OPO.js"
+                    titleTemplate="OPO.js"
                     meta={ [
-                        { name: 'description', content: 'Meetup dedicated to all JavaScript aficionados in Porto (OPO) area.' },
+                        { name: 'description', content: 'Bringing the Oporto area JavaScript Community together' },
                     ] } />
 
                 { children }
