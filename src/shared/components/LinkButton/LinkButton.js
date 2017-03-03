@@ -4,7 +4,7 @@ import '../Button/Button.css';
 
 class ButtonLink extends PureComponent {
     render() {
-        const { link, title, target, className, animation } = this.props;
+        const { link, title, target, className, animation, icon } = this.props;
 
         const buttonClass = classnames({
             button: true,
@@ -17,6 +17,7 @@ class ButtonLink extends PureComponent {
                 className={ buttonClass }
                 href={ link }
                 target={ target || '_self' }>
+                { icon }
                 { title }
             </a>
         );
@@ -29,6 +30,7 @@ ButtonLink.propTypes = {
     target: PropTypes.string,
     className: PropTypes.string,
     animation: PropTypes.string,
+    icon: PropTypes.object,
 };
 
 module.exports = ButtonLink;
