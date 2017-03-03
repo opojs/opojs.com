@@ -72,6 +72,10 @@
     text-decoration: none;
 }
 
+.secondary-cta:hover .play-icon {
+    fill: var(--color-yellow);
+}
+
 .secondary-cta .svg,
 .secondary-cta .svg-wrapper {
     @mixin size 8px, 14px;
