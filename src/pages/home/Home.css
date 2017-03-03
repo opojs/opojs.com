@@ -161,7 +161,7 @@
     }
 }
 
-@media(--layout-lte-xsmall) {
+@media(width <= 600px) {
     .home-page {
         background-image: url("~shared/media/images/backgrounds/mobile-background.jpg");
     }
@@ -248,6 +248,10 @@
 
     .logo {
         margin-bottom: 85px;
+    }
+
+    .inner h1 {
+        font-size: 42px;
     }
 }
 /* stylelint-enable */
