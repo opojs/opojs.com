@@ -1,3 +1,5 @@
+# Automatic building for master and staging branch
+
 # Use latest (long term support) version of node
 FROM node:boron
 
