@@ -24,13 +24,15 @@ button,
 
 .button.animation-skew::after {
     @mixin position absolute, auto, auto, 0, -10%;
-    @mixin size 0, 120%;
+    @mixin size 120%, 120%;
 
     content: "";
     z-index: -1;
-    transform: skewX(15deg);
+    transform: scaleX(0) skewX(15deg);
+    transform-origin: left center;
     background: var(--color-white);
     transition: all 0.3s ease-in-out;
+    pointer-events: none;
 }
 
 .button:hover.animation-skew {
@@ -42,8 +44,7 @@ button,
 }
 
 .button:hover.animation-skew::after {
-    left: -10%;
-    width: 120%;
+    transform: scaleX(1) skewX(15deg);
 }
 
 @media (--layout-lte-small) {

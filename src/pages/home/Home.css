@@ -5,6 +5,7 @@
 .home-page {
     @mixin size 100%, 100vh;
 
+    min-height: 900px;
     background-image: url("~shared/media/images/backgrounds/desktop-background.jpg");
     background-size: cover;
     background-position: center center;
@@ -103,6 +104,10 @@
 }
 
 @media(--layout-lte-large) {
+    .home-page {
+        min-height: 776px;
+    }
+
     .block {
         padding: 55px 20px 53px 105px;
     }
@@ -123,6 +128,10 @@
 }
 
 @media (--layout-lte-small) {
+    .home-page {
+        min-height: 1024px;
+    }
+
     .home-page {
         background-image: url("~shared/media/images/backgrounds/tablet-background.jpg");
     }
@@ -163,6 +172,7 @@
 
 @media(width <= 600px) {
     .home-page {
+        min-height: initial;
         background-image: url("~shared/media/images/backgrounds/mobile-background.jpg");
     }
 
@@ -243,4 +253,3 @@
         font-size: 42px;
     }
 }
-/* stylelint-enable */
