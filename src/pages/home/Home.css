@@ -99,6 +99,7 @@
     @mixin typography-smooth;
 
     margin: 0;
+    margin-top: 2px;
     font-size: 18px;
     font-weight: 300;
 }
@@ -156,13 +157,17 @@
         margin-bottom: 123px;
     }
 
+    .secondary-cta-area {
+        bottom: 15px;
+    }
+
     .inner > p,
     .secondary-cta p {
         font-size: 19px;
     }
 
-    .secondary-cta-area {
-        bottom: 15px;
+    .secondary-cta p {
+        margin-top: 0;
     }
 
     .twitter-icon {
@@ -172,12 +177,12 @@
 
 @media(width <= 600px) {
     .home-page {
-        min-height: initial;
+        min-height: 667px;
         background-image: url("~shared/media/images/backgrounds/mobile-background.jpg");
     }
 
     .block {
-        padding: 39px 22px 140px;
+        padding: 39px 22px 160px;
     }
 
     .logo {
@@ -214,6 +219,7 @@
 
 @media(--layout-lte-xxsmall) {
     .home-page {
+        min-height: 568px;
         background-image: url("~shared/media/images/backgrounds/mobile-2-background.jpg");
     }
 
