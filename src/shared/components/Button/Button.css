@@ -31,8 +31,8 @@ button,
     transform: scaleX(0) skewX(15deg);
     transform-origin: left center;
     background: var(--color-white);
-    transition: all 0.3s ease-in-out;
     pointer-events: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .button:hover.animation-skew {
