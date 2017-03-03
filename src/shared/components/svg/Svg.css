@@ -1,7 +1,7 @@
 @import "variables";
 
 .svg {
-    fill: var(--color-violet);
+    fill: var(--color-white);
     width: 24px;
     height: auto;
     display: inline-block;
