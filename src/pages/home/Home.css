@@ -167,7 +167,7 @@
     }
 
     .block {
-        padding: 39px 22px 190px;
+        padding: 39px 22px 140px;
     }
 
     .logo {
@@ -220,18 +220,7 @@
     }
 
     .inner > p {
-        margin-bottom: 40px;
-    }
-}
-
-/* ==========================================================================
-  Specific Device Media Queries
-  ========================================================================== */
-
-/* Iphone 6 */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-    .home-page {
-        height: calc(100vh + 39px);
+        margin-bottom: 25px;
     }
 }
 
