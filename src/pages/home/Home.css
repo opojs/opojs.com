@@ -49,6 +49,16 @@
     margin-right: 14px;
 }
 
+.main-cta .title {
+    font-weight: 500;
+}
+
+.main-cta .pre-title {
+    @mixin typography-smooth;
+
+    font-weight: 300;
+}
+
 .secondary-cta-area {
     @mixin position absolute, auto, auto, 0, 0;
 }
@@ -153,7 +163,7 @@
     }
 
     .block {
-        padding: 39px 22px 120px;
+        padding: 39px 22px 190px;
     }
 
     .logo {
@@ -174,7 +184,7 @@
     }
 
     .inner > p {
-        margin-bottom: 76px;
+        margin-bottom: 60px;
         font-size: 12px;
         line-height: 18px;
     }
@@ -184,7 +194,7 @@
     }
 
     .main-cta .svg {
-        @mixin size 20px, 20pxvh;
+        @mixin size 15px, 15px;
     }
 }
 
@@ -194,7 +204,19 @@
     }
 
     .block {
-        padding: 39px 22px 50px;
+        padding: 39px 22px 110px;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .inner h1 {
+        font-size: 25px;
+    }
+
+    .inner > p {
+        margin-bottom: 40px;
     }
 }
 

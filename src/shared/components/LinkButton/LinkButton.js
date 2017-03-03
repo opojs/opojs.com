@@ -4,7 +4,15 @@ import '../Button/Button.css';
 
 class ButtonLink extends PureComponent {
     render() {
-        const { link, title, target, className, animation, icon } = this.props;
+        const {
+          link,
+          title,
+          preTitle,
+          target,
+          className,
+          animation,
+          icon,
+        } = this.props;
 
         const buttonClass = classnames({
             button: true,
@@ -18,7 +26,8 @@ class ButtonLink extends PureComponent {
                 href={ link }
                 target={ target || '_self' }>
                 { icon }
-                { title }
+                <span className="pre-title">{ preTitle }</span>
+                <span className="title">{ title }</span>
             </a>
         );
     }
@@ -27,6 +36,7 @@ class ButtonLink extends PureComponent {
 ButtonLink.propTypes = {
     link: PropTypes.string.isRequired,
     title: PropTypes.string,
+    preTitle: PropTypes.string,
     target: PropTypes.string,
     className: PropTypes.string,
     animation: PropTypes.string,

@@ -26,7 +26,8 @@ class Home extends PureComponent {
                                 className="main-cta"
                                 link="https://twitter.com/opojs"
                                 target="_blank"
-                                title="Follow us on Twitter"
+                                title="follow us on Twitter"
+                                preTitle="Stay in the loop, "
                                 animation="skew"
                                 icon={ twitterIcon } />
                         </div>
@@ -35,7 +36,7 @@ class Home extends PureComponent {
                                 <div className="svg-wrapper">
                                     <Svg className="play-icon" svg={ playSvg } />
                                 </div>
-                                <p>Check our talks</p>
+                                <p>Check out our latest talks</p>
                             </a>
                         </div>
                     </div>

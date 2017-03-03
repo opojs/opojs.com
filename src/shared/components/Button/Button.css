@@ -55,6 +55,6 @@ button,
 @media(--layout-lte-xsmall) {
     .button {
         padding: 12px 18.5px 13px 18px;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
