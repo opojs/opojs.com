@@ -8,6 +8,7 @@
     "build:dev": "./bin/build dev",
     "build:prod": "./bin/build prod",
     "start": "./bin/server",
+    "start:pm2": "pm2 start bin/server -i 4",
     "start:dev": "./bin/server-dev",
     "precommit": "./bin/lint",
     "test": "npm run lint"

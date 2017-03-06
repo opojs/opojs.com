@@ -14,6 +14,7 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY package.json /usr/src/app/
 RUN npm install
+RUN npm install pm2 -g
 
 # Bundle app source
 COPY . /usr/src/app
@@ -23,4 +24,4 @@ RUN npm run build:prod
 
 # Expose Port and commands
 EXPOSE $PORT
-CMD [ "npm", "run", "start" ]
+CMD [ "npm", "run", "start:pm2" ]
