@@ -24,4 +24,4 @@ RUN npm run build:prod
 
 # Expose Port and commands
 EXPOSE $PORT
-CMD [ "npm", "run", "start:pm2" ]
+CMD [ "npm", "run", "pm2" ]
