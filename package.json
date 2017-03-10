@@ -8,7 +8,7 @@
     "build:dev": "./bin/build dev",
     "build:prod": "./bin/build prod",
     "start": "./bin/server",
-    "pm2": "pm2-docker -i 4 start bin/server",
+    "pm2": "pm2-docker -i 2 start bin/server",
     "start:dev": "./bin/server-dev",
     "precommit": "./bin/lint",
     "test": "npm run lint"

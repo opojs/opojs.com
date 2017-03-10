@@ -15,8 +15,8 @@
 
 .footer__madewithmoxy {
     @mixin typography-smooth;
-    font-size: 13px;
     color: color(var(--color-gallery) blackness(80%));
+    font-size: 13px;
 }
 
 .footer__madewithmoxy:hover {
