@@ -27,7 +27,9 @@ export default function index({ head, rootHtml, config, buildManifest }) {
                 ${head.link.toString()}
 
                 <!-- Rubik from Google-->
-                <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+                <link href="//ajax.googleapis.com" rel="dns-prefetch">
+                <link href="//fonts.googleapis.com" rel="dns-prefetch">
+                <link href="//fonts.gstatic.com" rel="dns-prefetch">
 
                 <!-- App stylesheet -->
                 <link id="app-css" rel="stylesheet" href="${assets['app.css']}">
@@ -57,6 +59,15 @@ export default function index({ head, rootHtml, config, buildManifest }) {
                 ga('create','${config.googleTrackingId}','auto');ga('send','pageview');
                 </script>
                 ` : ''}
+
+                <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+                <script>
+                  WebFont.load({
+                    google: {
+                      families: ['Rubik:300,400,500,700']
+                    }
+                  });
+                </script>
             </body>
         </html>
     `;

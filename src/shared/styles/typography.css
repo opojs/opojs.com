@@ -13,9 +13,13 @@ body {
 
 body {
     color: var(--color-white);
-    font-family: var(--typography-text-font);
+    font-family: var(--typography-text-font-fallback);
     font-size: 16px;
     overflow-wrap: break-word;  /* Break long words by default */
+}
+
+.wf-active body {
+    font-family: var(--typography-text-font);
 }
 
 ::selection {
@@ -51,10 +55,19 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--typography-display-font);
+    font-family: var(--typography-display-font-fallback);
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1.1;
+}
+
+.wf-active h1,
+.wf-active h2,
+.wf-active h3,
+.wf-active h4,
+.wf-active h5,
+.wf-active h6 {
+    font-family: var(--typography-display-font);
 }
 
 h1 {
