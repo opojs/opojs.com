@@ -21,7 +21,9 @@
    ========================================================================== */
 
 :root {
+    --typography-display-font-fallback: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --typography-display-font: "Rubik", sans-serif;
+    --typography-text-font-fallback: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --typography-text-font: "Rubik", sans-serif;
 }
 
