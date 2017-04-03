@@ -95,6 +95,11 @@
     fill: var(--color-white);
 }
 
+.secondary-cta .svg.twitter-icon {
+    @mixin size 25px, 21px;
+    margin-right: 10px;
+}
+
 .secondary-cta p {
     @mixin typography-smooth;
 

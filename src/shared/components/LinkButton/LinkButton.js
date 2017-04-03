@@ -9,6 +9,7 @@ class ButtonLink extends PureComponent {
           title,
           preTitle,
           target,
+          onClick,
           className,
           animation,
           icon,
@@ -24,9 +25,10 @@ class ButtonLink extends PureComponent {
             <a
                 className={ buttonClass }
                 href={ link }
-                target={ target || '_self' }>
+                target={ target || '_self' }
+                onClick={ onClick }>
                 { icon }
-                <span className="pre-title">{ preTitle }</span>
+                { preTitle ? <span className="pre-title">{ preTitle }</span> : null }
                 <span className="title">{ title }</span>
             </a>
         );
@@ -41,6 +43,7 @@ ButtonLink.propTypes = {
     className: PropTypes.string,
     animation: PropTypes.string,
     icon: PropTypes.object,
+    onClick: PropTypes.func,
 };
 
 module.exports = ButtonLink;

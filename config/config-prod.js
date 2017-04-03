@@ -9,7 +9,8 @@ const baseConfig = require('./config');
 const config = merge({}, baseConfig, {
     env: 'prod',
 
-    googleTrackingId: 'UA-XXXXXX',
+    googleTrackingId: 'UA-96540612-2',
+    facebookTrackingId: '1759118164330318',
 });
 
 module.exports = config;

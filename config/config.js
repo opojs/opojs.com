@@ -12,8 +12,11 @@ const config = {
     // These names are folders relative to src/pages
     routesToPrefetch: ['about'],
 
-    // Gooogle tracking id used for Google Analytics  and other google services
+    // Google tracking id used for Google Analytics  and other google services
     googleTrackingId: '',
+
+    // Facebook tracking id, used by the Facebook Pixel
+    facebookTrackingId: '',
 };
 
 module.exports = config;
