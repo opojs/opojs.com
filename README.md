@@ -1,8 +1,8 @@
-Opojs/opojs.com Web App
+OPO.js website
 
 ## Development
 
-Simply spawn the server by running `$ npm run start:dev`.
+`$ npm run start:dev`
 
 ## Deployment
 

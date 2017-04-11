@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react';
 import LinkButton from '../../shared/components/LinkButton/LinkButton.js';
 import Svg from 'shared/components/svg/Svg';
-import logoSvg from 'shared/media/images/logos/logo.svg';
+import SvgInline from 'shared/components/svg/SvgInline';
+import logoSvg from 'shared/media/images/logos/logo.inline.svg';
 import playSvg from 'shared/media/images/icons/play.svg';
 import twitterSvg from 'shared/media/images/icons/twitter.svg';
 import { trackViewContent } from 'shared/tracking';
@@ -17,23 +18,23 @@ class Home extends PureComponent {
     }
     render() {
         // Generic, no event information
-        // const tagline = 'Bringing the Oporto area JavaScript Community together.';
-        // const intro = 'We\'re always organising events for the community to share, discuss & push their JavaScript skills forward.';
-        // const primaryArea = this._renderTwitterInfo();
-        // const secondaryArea = this._renderYoutubeInfo();
+        const tagline = 'Bringing the Porto area JavaScript Community together.';
+        const intro = 'We\'re always organising events for the community to share, discuss & push their JavaScript skills forward.';
+        const primaryArea = this._renderTwitterInfo();
+        const secondaryArea = this._renderYoutubeInfo();
 
         // Pre-event information
-        const tagline = 'Rebooting OPO.js: Meetup #4 is here!';
-        const intro = 'Celebrating the reboot, we’re rebranding OPO.js and opening up the registrations for the long overdue meetup #4,\
-                       taking place on April 12, which is right around the corner.';
-        const primaryArea = this._renderKnowMoreAboutMeetup('https://attending.io/events/opojs-meetup-4');
-        const secondaryArea = this._renderTwitterInfo(false);
+        // const tagline = 'Rebooting OPO.js: Meetup #4 is here!';
+        // const intro = 'Celebrating the reboot, we’re rebranding OPO.js and opening up the registrations for the long overdue meetup #4,\
+        //                taking place on April 12, which is right around the corner.';
+        // const primaryArea = this._renderKnowMoreAboutMeetup('https://attending.io/events/opojs-meetup-4');
+        // const secondaryArea = this._renderTwitterInfo(false);
 
         return (
             <main className="home-page">
                 <div className="block">
                     <div className="inner">
-                        <Svg className="logo" svg={ logoSvg } />
+                        <SvgInline className="logo" svg={ logoSvg } />
                         <h1>{ tagline }</h1>
                         <p>{ intro }</p>
                         <div className="main-cta-area">{ primaryArea }</div>

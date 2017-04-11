@@ -46,7 +46,6 @@
 .main-cta .svg {
     @mixin size 25px, 21px;
 
-    fill: var(--color-white);
     margin-right: 14px;
 }
 
