@@ -1,7 +1,8 @@
 import React, { PureComponent } from 'react';
 import LinkButton from '../../shared/components/LinkButton/LinkButton.js';
 import Svg from 'shared/components/svg/Svg';
-import logoSvg from 'shared/media/images/logos/logo.svg';
+import SvgInline from 'shared/components/svg/SvgInline';
+import logoSvg from 'shared/media/images/logos/logo.inline.svg';
 import playSvg from 'shared/media/images/icons/play.svg';
 import twitterSvg from 'shared/media/images/icons/twitter.svg';
 import { trackViewContent } from 'shared/tracking';
@@ -33,7 +34,7 @@ class Home extends PureComponent {
             <main className="home-page">
                 <div className="block">
                     <div className="inner">
-                        <Svg className="logo" svg={ logoSvg } />
+                        <SvgInline className="logo" svg={ logoSvg } />
                         <h1>{ tagline }</h1>
                         <p>{ intro }</p>
                         <div className="main-cta-area">{ primaryArea }</div>
